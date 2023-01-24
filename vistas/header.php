@@ -7,7 +7,7 @@ if (strlen(session_id())<1)
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>CC | Admin</title>
+   <title>Asistencia | FyA</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3 -->
@@ -39,7 +39,7 @@ if (strlen(session_id())<1)
 <div class="fb-customerchat"
   attribution=setup_tool
   page_id="280144326139427"
-  theme_color="#0084ff"
+  theme_color="#AA0F16 "
   logged_in_greeting="Hola! deseas compartir algún sistema o descargar ?"
   logged_out_greeting="Hola! deseas compartir algún sistema o descargar ?">
 </div>

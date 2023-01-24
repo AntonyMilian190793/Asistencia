@@ -26,24 +26,21 @@ require_once('../modelos/Usuario.php');
 
 <?php if ($_SESSION['tipousuario']=='Administrador') {
 ?>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="small-box bg-green">
-    
-    <a href="asistencia.php" class="small-box-footer">
     <div class="inner">
-      <h5 style="font-size: 20px;">
-        <strong>Lista asistencias </strong>
-      </h5>
+      <h4 style="font-size: 20px;">
+      <strong>Lista asistencias </strong>
+      </h4>
       <p>Módulo</p>
     </div>
     <div class="icon">
-      <i class="fa fa-list" aria-hidden="true"></i>
-    </div>&nbsp;
-     <div class="small-box-footer">
-           <i class="fa"></i>
-     </div>
+      <i class="fa fa-list-ol" aria-hidden="true"></i>
+    </div>
+    <a href="asistencia.php" class="small-box-footer">Visualizar<i class="fa fa-arrow-circle-right"></i></a>
 
-    </a>
   </div>
 </div>
 <?php } ?>
@@ -97,19 +94,18 @@ require_once('../modelos/Usuario.php');
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="small-box bg-aqua">
     
-    <a href="rptasistencia.php" class="small-box-footer">
+    
     <div class="inner">
-      <h5 style="font-size: 20px;">
+      <h4 style="font-size: 20px;">
         <strong>Reporte de asistencias </strong>
-      </h5>
+      </h4>
       <p>Módulo</p>
     </div>
     <div class="icon">
-      <i class="fa fa-list" aria-hidden="true"></i>
-    </div>&nbsp;
-     <div class="small-box-footer">
-           <i class="fa"></i>
-     </div>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <a href="rptasistencia.php" class="small-box-footer">Visualizar <i class="fa fa-arrow-circle-right"></i></a>
+
 
     </a>
   </div>

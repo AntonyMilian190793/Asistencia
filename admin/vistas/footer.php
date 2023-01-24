@@ -1,9 +1,8 @@
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 0.1.2
+      <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; 2019-2020 <a target="_blank" href="#">Sistema Asistencia</a></strong> Todo los derechos
-    reservados.
+    <center><strong>&copy; 2023 Jorge Antony Milian Montalvo. <a target="_blank" href="#"></a></strong> Todos los Derechos Reservados</center>
   </footer>
 
 <!-- jQuery 3 -->

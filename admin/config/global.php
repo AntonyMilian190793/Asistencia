@@ -3,7 +3,7 @@
 define("DB_HOST", "localhost");
 
 // nombre de la base de datos
-define("DB_NAME", "control_asistencia");
+define("DB_NAME", "control");
 
 
 //nombre de usuario de base de datos
@@ -11,7 +11,7 @@ define("DB_USERNAME", "root");
 //define("DB_USERNAME", "root");
 
 //conraseña del usuario de base de datos
-define("DB_PASSWORD", "root");
+define("DB_PASSWORD", "");
 //define("DB_PASSWORD", "root");
 
 //codificacion de caracteres
