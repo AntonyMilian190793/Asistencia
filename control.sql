@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-01-2023 a las 04:11:22
+-- Tiempo de generación: 24-01-2023 a las 04:24:11
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 7.4.33
 
@@ -93,12 +93,19 @@ CREATE TABLE `departamento` (
 
 INSERT INTO `departamento` (`iddepartamento`, `nombre`, `descripcion`, `fechacreada`, `idusuario`) VALUES
 (1, 'Sistemas', 'Se encarga de todo el sistema en general', '2020-01-18 00:00:00', '1'),
-(2, 'Promotor de ahorro y crédito', 'trabajo de promoción', '2020-01-19 00:15:24', '1'),
-(3, 'Gerencia', 'representante legal', '2020-01-28 21:24:52', '1'),
-(4, 'Administración', 'encargado de agencia', '2020-01-28 21:25:08', '1'),
-(5, 'Recibidor(a)/Pagador(a)', 'encargado de los movimientos de caja', '2020-01-28 21:25:45', '1'),
-(6, 'Vigilancia', 'vigilante diurno', '2020-01-28 21:26:14', '1'),
-(7, 'Limpieza', 'encargado de la limpieza de oficinas', '2020-01-28 21:26:50', '1');
+(2, 'Contabilidad', '', '2020-01-19 00:15:24', '16'),
+(3, 'Dirección General', '', '2020-01-28 21:24:52', '16'),
+(4, 'EBA', '', '2020-01-28 21:25:08', '16'),
+(5, 'EBR Rural', '', '2020-01-28 21:25:45', '16'),
+(6, 'EBR Urbano', '', '2020-01-28 21:26:14', '16'),
+(7, 'EPTT', '', '2020-01-28 21:26:50', '16'),
+(8, 'FyA Digital', '', '2023-01-23 21:18:31', '16'),
+(9, 'Identidad y Misión', '', '2023-01-23 21:18:35', '16'),
+(10, 'Legal', '', '2023-01-23 21:18:40', '16'),
+(11, 'Logística', '', '2023-01-23 21:18:45', '16'),
+(12, 'Proyectos', '', '2023-01-23 21:18:56', '16'),
+(13, 'Recaudo y Voluntariado', '', '2023-01-23 21:19:03', '16'),
+(14, 'Recursos Humanos', '', '2023-01-23 21:19:09', '16');
 
 -- --------------------------------------------------------
 
@@ -143,7 +150,7 @@ CREATE TABLE `tipousuario` (
 
 INSERT INTO `tipousuario` (`idtipousuario`, `nombre`, `descripcion`, `fechacreada`, `idusuario`) VALUES
 (1, 'Administrador', 'Con priviliegios de gestionar todo el sistema', '2020-01-18 00:00:00', '1'),
-(2, 'Vendedor', 'vende y promueve los productos', '2020-01-19 00:30:13', 'admin');
+(2, 'Trabajador', 'Trabaja en la institución', '2020-01-19 00:30:13', '16');
 
 -- --------------------------------------------------------
 
@@ -229,7 +236,7 @@ ALTER TABLE `asistencia`
 -- AUTO_INCREMENT de la tabla `departamento`
 --
 ALTER TABLE `departamento`
-  MODIFY `iddepartamento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `iddepartamento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `mensajes`
