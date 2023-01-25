@@ -66,7 +66,7 @@ if (strlen(session_id())<1)
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../files/usuarios/<?php echo $_SESSION['imagen']; ?>" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $_SESSION["nombre"] .' - '.$_SESSION['departamento'];  ?></span>
+              <span class="hidden-xs"><?php echo $_SESSION["nombre"] .' '. $_SESSION['apellidos'] .' '.$_SESSION['departamento'];  ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -126,7 +126,7 @@ if (strlen(session_id())<1)
 ?>
       <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>Acceso</span>
+            <i class="fa fa-folder"></i> <span>Accesos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -134,25 +134,24 @@ if (strlen(session_id())<1)
           <ul class="treeview-menu">
             <li><a href="usuario.php"><i class="fa fa-circle-o"></i> Usuarios</a></li>
             <li><a href="tipousuario.php"><i class="fa fa-circle-o"></i> Tipo Usuario</a></li>
-            <li><a href="departamento.php"><i class="fa fa-circle-o"></i> Departamento</a></li>
           </ul>
       </li>
 
       <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>Departamento</span>
+            <i class="fa fa-folder"></i> <span>Áreas</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="departamento.php"><i class="fa fa-circle-o"></i> Departamento</a></li>            
+            <li><a href="departamento.php"><i class="fa fa-circle-o"></i> Todas las Áreas</a></li>            
           </ul>
       </li>
 
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>Asistencias</span>
+            <i class="fa fa-folder"></i> <span>Control de Asistencias</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

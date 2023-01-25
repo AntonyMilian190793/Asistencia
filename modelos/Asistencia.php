@@ -33,7 +33,7 @@ public function registrar_salida($codigo_persona,$tipo){
 	date_default_timezone_set('America/Lima');
 	$fecha = date("Y-m-d");
 	$hora = date("H:i:s");
- 	$sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha) VALUES ('$codigo_persona', '$tipo', '$fecha')";
+	$sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha) VALUES ('$codigo_persona', '$tipo', '$fecha')";
     return ejecutarConsulta($sql);
 }
 

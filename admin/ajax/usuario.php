@@ -127,6 +127,7 @@ switch ($_GET["op"]) {
 			$_SESSION['idusuario']=$fetch->idusuario;
 			$id=$fetch->idusuario;
 			$_SESSION['nombre']=$fetch->nombre;
+			$_SESSION['apellidos']=$fetch->apellidos;
 			$_SESSION['codigo_persona']=$fetch->codigo_persona;
 			$_SESSION['imagen']=$fetch->imagen;
 			$_SESSION['login']=$fetch->login;

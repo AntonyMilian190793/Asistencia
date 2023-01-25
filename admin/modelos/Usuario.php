@@ -49,7 +49,7 @@ public function mostrar($idusuario){
 
 //listar registros
 public function listar(){
-	$sql="SELECT * FROM usuarios";
+	$sql="SELECT * FROM usuarios ORDER BY nombre ASC";
 	return ejecutarConsulta($sql);
 }
 

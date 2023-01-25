@@ -39,7 +39,7 @@ public function mostrar($iddepartamento){
 
 //listar registros
 public function listar(){
-	$sql="SELECT * FROM departamento";
+	$sql="SELECT * FROM departamento ORDER BY nombre ASC";
 	return ejecutarConsulta($sql);
 }
 //listar y mostrar en selct
