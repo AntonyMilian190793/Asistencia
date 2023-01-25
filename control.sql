@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-01-2023 a las 19:23:15
+-- Tiempo de generación: 25-01-2023 a las 21:23:59
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -97,7 +97,7 @@ CREATE TABLE `departamento` (
 INSERT INTO `departamento` (`iddepartamento`, `nombre`, `descripcion`, `fechacreada`, `idusuario`) VALUES
 (1, 'Sistemas', 'Se encarga de todo el sistema en general', '2020-01-18 00:00:00', '1'),
 (2, 'Contabilidad', '', '2020-01-19 00:15:24', '16'),
-(3, 'Dirección General', '', '2020-01-28 21:24:52', '16'),
+(3, 'Directivos', '', '2020-01-28 21:24:52', '16'),
 (4, 'EBA', '', '2020-01-28 21:25:08', '16'),
 (5, 'EBR Rural', '', '2020-01-28 21:25:45', '16'),
 (6, 'EBR Urbano', '', '2020-01-28 21:26:14', '16'),
