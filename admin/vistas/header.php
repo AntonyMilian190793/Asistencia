@@ -51,7 +51,7 @@ if (strlen(session_id())<1)
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!-- logo for regular state and mobile devices -->
             <span class="logo-mini"><b>FY</b> A</span>
-            <span class="logo-lg"><img src="../files/negocio/logo.png"height="60px"></span>
+            <span class="logo-lg"><img src="../files/negocio/logo.png"height="50px"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
