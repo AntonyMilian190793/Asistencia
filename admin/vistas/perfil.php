@@ -25,27 +25,14 @@ require 'header.php';
         <div class="box-body">
             <table class="table table-bordered table-hover table-striped">
 
-            <thead>
-                <tr>
-                    <th>Usuario</th>
-                    <th>Contraseña</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Foto</th>
-                    <th>Área</th>
-                    <th>Documento</th>
-                    <th>Editar</th>
-                </tr>
-            </thead>
-            <tbody>
 
 
-
-<div class="panel-body table-responsive" id="">
+<div class="panel-body table-responsive" id="listadoregistros">
   <table id="" class="table table-striped table-bordered table-condensed table-hover">
+
     <thead>
-      <th>Opciones</th>
-      <th>Usuario</th>
+    <th>Opciones</th>
+    <th>Usuario</th>
     <th>Contraseña</th>
     <th>Nombre</th>
     <th>Apellido</th>
@@ -55,16 +42,6 @@ require 'header.php';
     </thead>
     <tbody> 
     </tbody>
-    <tfoot>
-      <th>Opciones</th>
-      <th>Usuario</th>
-    <th>Contraseña</th>
-    <th>Nombre</th>
-    <th>Apellido</th>
-    <th>Foto</th>
-    <th>Área</th>
-    <th>Documento</th>
-    </tfoot>   
   </table>
 </div>
 
