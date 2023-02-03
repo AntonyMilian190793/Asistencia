@@ -81,7 +81,7 @@ if (strlen(session_id())<1)
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-primary btn-flat">Perfil</a>
+                  <a href="perfil.php" class="btn btn-success btn-flat">Perfil</a>
                 </div>
                 <div class="pull-right">
                   <a href="../ajax/usuario.php?op=salir" class="btn btn-danger btn-flat">Salir</a>
