@@ -48,7 +48,7 @@
   border-bottom: 0 solid transparent;
 }
 .skin-blue .main-header .logo:hover {
-  background-color: #357ca5;
+  background-color: #AA0F16;
 }
 .skin-blue .main-header li.user-header {
   background-color: #AA0F16 ;
@@ -138,7 +138,7 @@
   border-bottom: 0 solid transparent;
 }
 .skin-blue.layout-top-nav .main-header > .logo:hover {
-  background-color: #3b8ab8;
+  background-color: #AA0F16;
 }
 /*
  * Skin: Blue
@@ -190,7 +190,7 @@
   border-bottom: 0 solid transparent;
 }
 .skin-blue-light .main-header .logo:hover {
-  background-color: #3b8ab8;
+  background-color: #AA0F16;
 }
 .skin-blue-light .main-header li.user-header {
   background-color: #AA0F16 ;
@@ -305,7 +305,7 @@
   border-bottom: 0 solid transparent;
 }
 .skin-blue.layout-top-nav .main-header > .logo:hover {
-  background-color: #3b8ab8;
+  background-color: #AA0F16;
 }
 /*
  * Skin: Black
