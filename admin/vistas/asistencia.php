@@ -30,6 +30,7 @@ require 'header.php';
       <th>Opciones</th>
       <th>Código</th>
       <th>Nombres</th>
+      <th>Apellidos</th> 
       <th>Área</th>
       <th>Fecha Hora</th>
       <th>Asistencia</th>
@@ -40,7 +41,8 @@ require 'header.php';
     <tfoot>
       <th>Opciones</th>
       <th>Código</th>
-      <th>Nombres</th>
+      <th>Nombres</th> 
+      <th>Apellidos</th>      
       <th>Área</th>
       <th>Fecha Hora</th>
       <th>Asistencia</th>
