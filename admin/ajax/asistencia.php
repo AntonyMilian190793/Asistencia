@@ -119,9 +119,10 @@ switch ($_GET["op"]) {
 			$data[]=array(
 				"0"=>$reg->fecha,
 				"1"=>$reg->nombre,
-				"2"=>$reg->tipo,
-				"3"=>$reg->fecha_hora,
-				"4"=>$reg->codigo_persona
+				"2"=>$reg->apellidos,
+				"3"=>$reg->tipo,
+				"4"=>$reg->fecha_hora,
+				"5"=>$reg->codigo_persona
 				);
 		}
 
