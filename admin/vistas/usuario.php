@@ -32,7 +32,7 @@ require 'header.php';
       <th>Apellidos</th>
       <th>Login</th>
       <th>Email</th>
-      <th>Foto</th>
+
       <th>Fecha/Registro</th>
       <th>Estado</th>
     </thead>
@@ -44,7 +44,7 @@ require 'header.php';
       <th>Apellidos</th>
       <th>Login</th>
       <th>Email</th>
-      <th>Foto</th>
+
       <th>Fecha/Registro</th>
       <th>Estado</th>
     </tfoot>   

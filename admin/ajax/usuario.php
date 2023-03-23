@@ -17,7 +17,6 @@ $codigo_persona=isset($_POST["codigo_persona"])? limpiarCadena($_POST["codigo_pe
 $password=isset($_POST["clave"])? limpiarCadena($_POST["clave"]):"";
 $imagen=isset($_POST["imagen"])? limpiarCadena($_POST["imagen"]):"";
 $usuariocreado=isset($_POST["nombre"])? limpiarCadena($_POST["nombre"]):"";
-$idmensaje=isset($_POST["idmensaje"])? limpiarCadena($_POST["idmensaje"]):"";
 
 
 switch ($_GET["op"]) {
@@ -93,9 +92,8 @@ switch ($_GET["op"]) {
 				"2"=>$reg->apellidos,
 				"3"=>$reg->login,
 				"4"=>$reg->email,
-				"5"=>"<img src='../files/usuarios/".$reg->imagen."' height='50px' width='50px'>",
-				"6"=>$reg->fechacreado,
-				"7"=>($reg->estado)?'<span class="label bg-green">Activado</span>':'<span class="label bg-red">Desactivado</span>'
+				"5"=>$reg->fechacreado,
+				"6"=>($reg->estado)?'<span class="label bg-green">Activado</span>':'<span class="label bg-red">Desactivado</span>'
 				);
 		}
 
