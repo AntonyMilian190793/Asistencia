@@ -36,6 +36,12 @@ function registrar_asistencia(e){
      limpiar();
 }
 
+function ponleFocus(){
+    document.getElementById("codigo_persona").focus();
+}
+
+ponleFocus();
+
 
 
 
