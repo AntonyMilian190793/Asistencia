@@ -16,6 +16,7 @@
     <!-- iCheck -->
     <link rel="stylesheet" href="../admin/public/css/blue.css">
     <link rel="shortcut icon" href="../admin/public/img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 
   </head>
 <body class="hold-transition lockscreen">
@@ -33,7 +34,12 @@
     <a href="#"><b>Asistencia</b> FyA</a>
   </div>
   <!-- User name -->
-  <div class="lockscreen-name">ASISTENCIA</div>
+  <center>
+  <div class="container-clock">
+        <h1 id="time" style="color:#AA0F16">00:00:00</h1>
+        <p id="date"  style="color:#AA0F16">date</p>
+    </div>
+</center>
 
   <!-- START LOCK SCREEN ITEM -->
   <div class="lockscreen-item">
@@ -117,6 +123,6 @@
       input.type = "password";
       boton.src = "../admin/files/negocio/eye.png";
   }
-
-
 </script>
+
+<script src="clock.js"></script>
