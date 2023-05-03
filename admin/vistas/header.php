@@ -108,7 +108,7 @@ if (strlen(session_id())<1)
       <!-- <li class="header">MENÚ DE NAVEGACIÓN</li> -->
 
 
-      <li><a href="escritorio.php"><i class="fa  fa-dashboard (alias)"></i> <span>Inicio</span></a></li>
+      <li><a href="escritorio.php"><i class="fa fa-home"></i> <span>Inicio</span></a></li>
 
 <!--
       <li class="treeview">
@@ -128,39 +128,40 @@ if (strlen(session_id())<1)
 ?>
       <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>Accesos</span>
+            <i class="fa fa-user"></i> <span>Mantenimiento de Usuarios</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="usuario.php"><i class="fa fa-circle-o"></i> Usuarios</a></li>
-            <li><a href="tipousuario.php"><i class="fa fa-circle-o"></i> Tipo Usuario</a></li>
+            <li><a href="usuario.php"><i class="fa fa-users"></i> Usuarios</a></li>
+            <li><a href="tipousuario.php"><i class="fa fa-male"></i> Tipo Usuario</a></li>
           </ul>
       </li>
 
       <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>Áreas</span>
+          <i class="fa fa-folder-open" aria-hidden="true"></i>
+            <span>Áreas</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="departamento.php"><i class="fa fa-circle-o"></i> Todas las Áreas</a></li>            
+            <li><a href="departamento.php"><i class="fa fa-folder-o""></i> Todas las Áreas</a></li>            
           </ul>
       </li>
 
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>Control de Asistencias</span>
+          <i class="fa fa-clock-o" aria-hidden="true"></i> 
+          <span>Control de Asistencias</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="asistencia.php"><i class="fa fa-circle-o"></i> Asistencia</a></li>
-            <li><a href="rptasistencia.php"><i class="fa fa-circle-o"></i> Reportes</a></li>
+            <li><a href="rptasistencia.php"><i class="fa fa-calendar"></i></i> Reportes</a></li>
            
           </ul>
       </li>

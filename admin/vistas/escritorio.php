@@ -73,7 +73,7 @@ require_once('../modelos/Usuario.php');
 <?php if ($_SESSION['tipousuario']=='Administrador') {
 ?>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-  <div class="small-box bg-orange">
+  <div class="small-box bg-yellow">
     <div class="inner">
       <h4 style="font-size: 40px;">
         <strong>Empleados:   </strong>
@@ -92,7 +92,7 @@ require_once('../modelos/Usuario.php');
 <?php if ($_SESSION['tipousuario']=='Administrador') {
 ?>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-  <div class="small-box bg-aqua">
+  <div class="small-box bg-blue">
     
     
     <div class="inner">
