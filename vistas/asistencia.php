@@ -33,12 +33,12 @@
     <a href="#"><b>Asistencia</b> FyA</a>
   </div>
   <!-- User name -->
-  <center>
+
   <div class="container-clock">
         <h1 id="time" style="color:#AA0F16">00:00:00</h1>
         <p id="date"  style="color:#AA0F16">date</p>
     </div>
-</center>
+
 
   <!-- START LOCK SCREEN ITEM -->
   <div class="lockscreen-item">
