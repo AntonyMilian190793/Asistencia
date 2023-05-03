@@ -29,7 +29,6 @@
     </div> 
 
 
-
   <div class="lockscreen-logo">
     <a href="#"><b>Asistencia</b> FyA</a>
   </div>
