@@ -1,6 +1,6 @@
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
+      <b>Versión</b> 2.0
     </div>
     <center><strong>&copy; 2023 Jorge Antony Milian Montalvo. <a target="_blank" href="#"></a></strong> Todos los Derechos Reservados</center>
   </footer>

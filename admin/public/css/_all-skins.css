@@ -59,41 +59,41 @@
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
-  background-color: #222d32;
+  background-color: #ffff;
 }
 .skin-blue .user-panel > .info,
 .skin-blue .user-panel > .info > a {
   color: #fff;
 }
 .skin-blue .sidebar-menu > li.header {
-  color: #4b646f;
-  background: #1a2226;
+  color: #AA0F16;
+  background: #EFF4F7;
 }
 .skin-blue .sidebar-menu > li > a {
   border-left: 3px solid transparent;
 }
 .skin-blue .sidebar-menu > li:hover > a,
 .skin-blue .sidebar-menu > li.active > a {
-  color: #ffffff;
-  background: #1e282c;
+  color: #AA0F16;
+  background: #EFF4F7;
   border-left-color: #AA0F16 ;
 }
 .skin-blue .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
-  background: #2c3b41;
+  background: #EFF4F7;
 }
 .skin-blue .sidebar a {
-  color: #b8c7ce;
+  color: #AA0F16;
 }
 .skin-blue .sidebar a:hover {
   text-decoration: none;
 }
 .skin-blue .treeview-menu > li > a {
-  color: #8aa4af;
+  color: #AA0F16;
 }
 .skin-blue .treeview-menu > li.active > a,
 .skin-blue .treeview-menu > li > a:hover {
-  color: #ffffff;
+  color: #AA0F16;
 }
 .skin-blue .sidebar-form {
   border-radius: 3px;

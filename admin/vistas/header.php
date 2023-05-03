@@ -51,13 +51,15 @@ if (strlen(session_id())<1)
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!-- logo for regular state and mobile devices -->
             <span class="logo-mini"><b>FY</b> A</span>
-            <span class="logo-lg"><img src="../files/negocio/logo.png"height="50px"></span>
+            <span class="logo-lg"><img src="../files/negocio/logo1.png" height="50px" weight="200px"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Navegación</span>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span class="hidden-xs"><strong><?php echo $_SESSION["nombre"] .' '. $_SESSION['apellidos'];  ?></strong></span>
           </a>
 
       <div class="navbar-custom-menu">
@@ -66,7 +68,7 @@ if (strlen(session_id())<1)
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../files/usuarios/<?php echo $_SESSION['imagen']; ?>" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $_SESSION["nombre"] .' '. $_SESSION['apellidos'];  ?></span>
+              
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->

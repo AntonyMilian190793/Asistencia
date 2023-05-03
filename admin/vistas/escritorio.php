@@ -31,7 +31,7 @@ require_once('../modelos/Usuario.php');
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="small-box bg-green">
     <div class="inner">
-      <h4 style="font-size: 20px;">
+      <h4 style="font-size: 40px;">
       <strong>Lista asistencias </strong>
       </h4>
       <p>Módulo</p>
@@ -51,7 +51,7 @@ require_once('../modelos/Usuario.php');
     
     <a href="asistenciau.php" class="small-box-footer">
     <div class="inner">
-      <h5 style="font-size: 20px;">
+      <h5 style="font-size: 40px;">
         <strong>Mi lista asistencias </strong>
       </h5>
       <p>Módulo</p>
@@ -75,7 +75,7 @@ require_once('../modelos/Usuario.php');
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="small-box bg-orange">
     <div class="inner">
-      <h4 style="font-size: 20px;">
+      <h4 style="font-size: 40px;">
         <strong>Empleados:   </strong>
       </h4>
       <p>Total <?php echo $reg->nombre; ?></p>
@@ -96,7 +96,7 @@ require_once('../modelos/Usuario.php');
     
     
     <div class="inner">
-      <h4 style="font-size: 20px;">
+      <h4 style="font-size: 40px;">
         <strong>Reporte de asistencias </strong>
       </h4>
       <p>Módulo</p>
@@ -118,7 +118,7 @@ require_once('../modelos/Usuario.php');
     
     <a href="rptasistenciau.php" class="small-box-footer">
     <div class="inner">
-      <h5 style="font-size: 20px;">
+      <h5 style="font-size: 40px;">
         <strong>Mi reporte de asistencias </strong>
       </h5>
       <p>Módulo</p>
