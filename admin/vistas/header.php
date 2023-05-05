@@ -50,8 +50,8 @@ if (strlen(session_id())<1)
     <a href="escritorio.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!-- logo for regular state and mobile devices -->
-            <span class="logo-mini"><b>FY</b> A</span>
-            <span class="logo-lg"><img src="../files/negocio/logo1.png" height="50px" weight="200px"></span>
+            <span class="hidden-md-down" src="../files/negocio/logo1.png"" alt="">
+            <span class="hidden-lg-up"><img src="../files/negocio/logo1.png" height="50px" weight="200px"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
