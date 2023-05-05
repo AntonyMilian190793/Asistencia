@@ -4,7 +4,7 @@ const date = document.getElementById('date');
 const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
 ];
-const dayshNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Sábado"];
+const dayshNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 
 const interval = setInterval(() => {
 
