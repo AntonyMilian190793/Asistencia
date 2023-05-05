@@ -36,13 +36,7 @@ if (strlen(session_id())<1)
 <div id="fb-root"></div>
 
 <!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="280144326139427"
-  theme_color="#AA0F16 "
-  logged_in_greeting="Hola! deseas compartir algún sistema o descargar ?"
-  logged_out_greeting="Hola! deseas compartir algún sistema o descargar ?">
-</div>
+
 <div class="wrapper">
 
   <header class="main-header">
@@ -51,7 +45,7 @@ if (strlen(session_id())<1)
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!-- logo for regular state and mobile devices -->
             <span class="hidden-md-down" src="../files/negocio/logo1.png"" alt="">
-            <span class="hidden-lg-up"><img src="../files/negocio/logo1.png" height="50px" weight="200px"></span>
+            <span class="hidden-lg-up"><img src="../files/negocio/logo1.png" height="55px"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -68,19 +62,10 @@ if (strlen(session_id())<1)
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../files/usuarios/<?php echo $_SESSION['imagen']; ?>" class="user-image" alt="User Image">
-              
             </a>
+
             <ul class="dropdown-menu">
-              <!-- User image -->
-              <!-- <li class="user-header">
-                <img src="../files/usuarios/<?php echo $_SESSION['imagen']; ?>" class="img-circle" alt="User Image">
 
-                <p>
-                  <?php echo $_SESSION['nombre'].' '.$_SESSION['departamento']; ?>
-
-                </p>
-              </li> -->
-              <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
                   <a href="perfil.php" class="btn btn-success btn-flat">Perfil</a>
