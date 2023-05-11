@@ -216,7 +216,7 @@ new Morris.Bar({
       ykeys: ['total'],
       labels: ['total'],
       hideHover: 'auto',
-      barColors: ["#AA0F16"], 
+      barColors: ["#0073B7"], 
     });
 
     </script>
