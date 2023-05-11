@@ -74,11 +74,11 @@ require 'header.php';
       <input class="form-control" type="text" name="apellidos" id="apellidos" maxlength="100" placeholder="Apellidos" required>
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Email: </label>
+      <label for="">Emai(*)l: </label>
       <input class="form-control" type="email" name="email" id="email" maxlength="70" placeholder="email">
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Login(*):</label>
+      <label for="">Repetir Email(*):</label>
       <input class="form-control" type="text" name="login" id="login" maxlength="20" placeholder="nombre de usuario" required>
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12" id="claves">
@@ -86,7 +86,7 @@ require 'header.php';
       <input class="form-control" type="password" name="clave" id="clave" maxlength="64" placeholder="Clave">
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12" id="claves">
-      <label for="">Clave de asistencia(*):</label>
+      <label for="">Documento de Identidad(*):</label>
       <button class="btn btn-info" type="button" onclick="generar(6);" >Generar</button>
       <input class="form-control" type="text" name="codigo_persona" id="codigo_persona" maxlength="64" placeholder="Clave">
     </div>

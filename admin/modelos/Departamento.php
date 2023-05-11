@@ -44,7 +44,7 @@ public function listar(){
 }
 //listar y mostrar en selct
 public function select(){
-	$sql="SELECT * FROM departamento";
+	$sql="SELECT * FROM departamento ORDER BY nombre ASC";
 	return ejecutarConsulta($sql);
 }
 
