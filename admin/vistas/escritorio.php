@@ -110,6 +110,118 @@ require_once('../modelos/Usuario.php');
     </a>
   </div>
 </div>
+
+<?php
+
+  $connect = mysqli_connect("localhost", "root", "", "control");
+  $query = "SELECT departamento.nombre as nom, COUNT(*) AS total
+  FROM usuarios JOIN
+    departamento ON usuarios.iddepartamento = departamento.iddepartamento
+    WHERE
+    usuarios.estado = 1
+    GROUP BY
+    departamento.nombre
+      ORDER BY total DESC";
+
+
+  $result = mysqli_query($connect, $query);
+  $chart_data = "";
+
+  while($row = mysqli_fetch_array($result)) {
+
+    $chart_data .= "{ nom:'".$row["nom"]."', total:".$row["total"]."}, ";
+  }
+  $chart_data = substr($chart_data, 0, -2);
+
+
+?>
+&nbsp;
+&nbsp;
+
+<section class="card">
+					<header class="card-header">
+						<strong>Gráficos Estadístico</strong>
+					</header>
+          &nbsp;
+					<div class="card-block">
+						<div id="divgrafico" style="height: 250px;"></div>
+					</div>
+				</section>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>   
+
+    <link rel="stylesheet" href="../vistas/morris/morris.css">
+    <script src="../vistas/morris/morris.min.js"></script>
+
+
+    <script>
+
+new Morris.Bar({
+      element: 'divgrafico',
+      data: [<?php echo $chart_data; ?>],
+      xkey: 'nom',
+      ykeys: ['total'],
+      labels: ['total'],
+      hideHover: 'auto',
+      barColors: ["#AA0F16"], 
+    });
+
+    </script>
+
+    <br>
+
+    <section class="card">
+					<header class="card-header">
+					</header>
+					<div class="card-block">
+						<div id="divgrafico2" style="height: 250px;"></div>
+					</div>
+				</section>
+
+        <script>
+
+
+<?php
+
+  $connect = mysqli_connect("localhost", "root", "", "control");
+  $query2 = "SELECT usuarios.nombre as nom, COUNT(*) as total, asistencia.fecha_hora as horaEntrada
+FROM usuarios JOIN
+asistencia ON usuarios.codigo_persona = asistencia.codigo_persona
+WHERE
+usuarios.estado = 1
+GROUP BY
+usuarios.nombre
+ORDER BY total DESC";
+      
+
+  $result = mysqli_query($connect, $query2);
+  $chart_data = "";
+
+  while($row = mysqli_fetch_array($result)) {
+
+    $chart_data .= "{ nom:'".$row["nom"]."', total:".$row["total"]."}, ";
+  }
+  $chart_data = substr($chart_data, 0, -2);
+
+
+?>
+
+new Morris.Bar({
+      element: 'divgrafico2',
+      data: [<?php echo $chart_data; ?>],
+      xkey: 'nom',
+      ykeys: ['total'],
+      labels: ['total'],
+      hideHover: 'auto',
+      barColors: ["#AA0F16"], 
+    });
+
+    </script>
+
+        
 <?php } ?>
 <?php if ($_SESSION['tipousuario']!='Administrador') {
 ?>
@@ -149,3 +261,5 @@ require 'footer.php';
 }
 ob_end_flush();
 ?>
+
+<script src="scripts/grafica1.js" charset="utf-8"></script>
