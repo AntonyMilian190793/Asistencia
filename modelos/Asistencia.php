@@ -25,7 +25,7 @@ public function registrar_entrada($codigo_persona,$tipo){
 	date_default_timezone_set('America/Lima');
 	$fecha = date("Y-m-d");
 	$hora = date("H:i:s");
-    $sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha) VALUES ('$codigo_persona', '$tipo', '$fecha')";
+    $sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha, hora) VALUES ('$codigo_persona', '$tipo', '$fecha', '$hora')";
 	return ejecutarConsulta($sql);
 }
 
@@ -33,7 +33,7 @@ public function registrar_salida($codigo_persona,$tipo){
 	date_default_timezone_set('America/Lima');
 	$fecha = date("Y-m-d");
 	$hora = date("H:i:s");
-	$sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha) VALUES ('$codigo_persona', '$tipo', '$fecha')";
+	$sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha, hora) VALUES ('$codigo_persona', '$tipo', '$fecha', '$hora')";
     return ejecutarConsulta($sql);
 }
 

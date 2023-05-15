@@ -221,6 +221,55 @@ new Morris.Bar({
 
     </script>
 
+
+
+<section class="card">
+					<header class="card-header">
+					</header>
+					<div class="card-block">
+						<div id="divgrafico3" style="height: 250px;"></div>
+					</div>
+				</section>
+
+        <script>
+
+
+<?php
+
+  $connect = mysqli_connect("localhost", "root", "", "control");
+  $query3 = "SELECT  usuarios.nombre as nombre, usuarios.apellidos as apellido, departamento.nombre as area, asistencia.tipo as tipo, DATE(asistencia.fecha_hora)As fecha, TIME(asistencia.fecha_hora) As hora 
+  FROM asistencia 
+  JOIN usuarios ON usuarios.codigo_persona = asistencia.codigo_persona
+  JOIN departamento  ON usuarios.iddepartamento = departamento.iddepartamento 
+  WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.hora BETWEEN '11:00:00' AND '12:30:00'" ;
+      
+
+  $result = mysqli_query($connect, $query3);
+  $chart_data = "";
+
+  while($row = mysqli_fetch_array($result)) {
+
+    $chart_data .= "{ nombre:'".$row["nombre"]."' ,hora:'".$row["hora"]."'}, "; 
+
+  }
+  $chart_data = substr($chart_data, 0, -2);
+
+
+
+?>
+
+new Morris.Bar({
+      element: 'divgrafico3',
+      data: [<?php echo $chart_data; ?>],
+      xkey: 'nombre',
+      ykeys: ['hora'],
+      labels: ['hora'],
+      hideHover: 'auto',
+      barColors: ["#F39C12"], 
+    });
+
+    </script>
+
         
 <?php } ?>
 <?php if ($_SESSION['tipousuario']!='Administrador') {
@@ -261,5 +310,3 @@ require 'footer.php';
 }
 ob_end_flush();
 ?>
-
-<script src="scripts/grafica1.js" charset="utf-8"></script>
