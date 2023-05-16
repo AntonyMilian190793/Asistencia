@@ -65,7 +65,7 @@ switch ($_GET["op"]) {
 				"4"=>$reg->fecha,
 				"5"=>$reg->hora,
 				"6"=>($reg->tipo == "Entrada")?'<span class="label bg-primary">Entrada</span>' : '<span class="label bg-primary">Salida</span>',
-				"7"=>($reg->estado == "Tardanza")?'<span class="label bg-red">Tardanza</span>':'<span class="label bg-green"></span>'
+				"7"=>($reg->estado == "Tardanza")?'<span class="label bg-red">Tardanza</span>':'<span class="label bg-green">Normal</span>'
 				);
 		}
 
