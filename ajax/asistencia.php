@@ -39,7 +39,7 @@ switch ($_GET["op"]) {
     			echo $rspta ? '<h3><strong>Nombres: </strong> '. $result['nombre'].' '.$result['apellidos'].'</h3><div class="alert alert-success"> Ingreso registrado '.$hora.'</div>' : 'No se pudo registrar el ingreso';
    		  }else{
 
-			if($hora >= $horaSalida){
+			if($hora <= $horaSalida){
 				$estado = "Personal normal";
 			}else{
 				$estado = "Practicante";
