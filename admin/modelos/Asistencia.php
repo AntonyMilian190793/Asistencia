@@ -12,7 +12,7 @@ public function __construct(){
 
 //listar registros
 public function listar(){
-	$sql="SELECT a.idasistencia,a.codigo_persona,a.fecha_hora,a.tipo,a.fecha,u.nombre,u.apellidos,d.nombre as departamento, a.estado as estado FROM asistencia a INNER JOIN usuarios u INNER JOIN departamento d ON u.iddepartamento=d.iddepartamento WHERE a.codigo_persona=u.codigo_persona";
+	$sql="SELECT a.idasistencia as id,a.codigo_persona,a.tipo,a.fecha,u.nombre,u.apellidos,d.nombre as departamento, a.estado as estado, a.hora as hora FROM asistencia a INNER JOIN usuarios u INNER JOIN departamento d ON u.iddepartamento=d.iddepartamento WHERE a.codigo_persona=u.codigo_persona ORDER BY idasistencia ASC";
 	return ejecutarConsulta($sql);
 }
 

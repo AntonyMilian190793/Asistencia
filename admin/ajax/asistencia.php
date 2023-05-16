@@ -58,15 +58,14 @@ switch ($_GET["op"]) {
 
 		while ($reg=$rspta->fetch_object()) {
 			$data[]=array(
-				"0"=>'<button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>',
-				"1"=>$reg->codigo_persona,
-				"2"=>$reg->nombre,
-				"3"=>$reg->apellidos,
-				"4"=>$reg->departamento,
-				"5"=>$reg->fecha_hora,
+				"0"=>$reg->id,
+				"1"=>$reg->nombre ."  ". $reg->apellidos,
+				"2"=>$reg->departamento,
+				"3"=>$reg->codigo_persona,
+				"4"=>$reg->fecha,
+				"5"=>$reg->hora,
 				"6"=>$reg->tipo,
-				"7"=>$reg->fecha,
-				"8"=>$reg->estado
+				"7"=>$reg->estado
 				);
 		}
 

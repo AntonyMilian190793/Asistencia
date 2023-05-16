@@ -27,29 +27,17 @@ require 'header.php';
 <div class="panel-body table-responsive" id="listadoregistros">
   <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
     <thead>
-      <th>Opciones</th>
-      <th>Código</th>
-      <th>Nombres</th>
-      <th>Apellidos</th> 
+      <th>N°</th>
+      <th>Nombres y Apellidos</th>
       <th>Área</th>
-      <th>Fecha Hora</th>
-      <th>Asistencia</th>
+      <th>Código de ingreso</th>
       <th>Fecha</th>
+      <th>Hora</th>
+      <th>Tipo</th>
       <th>Estado</th>
     </thead>
     <tbody>
-    </tbody>
-    <tfoot>
-      <th>Opciones</th>
-      <th>Código</th>
-      <th>Nombres</th> 
-      <th>Apellidos</th>      
-      <th>Área</th>
-      <th>Fecha Hora</th>
-      <th>Asistencia</th>
-      <th>Fecha</th>
-      <th>Estado</th>
-    </tfoot>   
+    </tbody>  
   </table>
 </div>
 
