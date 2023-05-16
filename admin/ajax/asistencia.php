@@ -65,7 +65,8 @@ switch ($_GET["op"]) {
 				"4"=>$reg->departamento,
 				"5"=>$reg->fecha_hora,
 				"6"=>$reg->tipo,
-				"7"=>$reg->fecha
+				"7"=>$reg->fecha,
+				"8"=>$reg->estado
 				);
 		}
 

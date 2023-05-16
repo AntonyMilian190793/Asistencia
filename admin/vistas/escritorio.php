@@ -220,7 +220,7 @@ new Morris.Bar({
     });
 
     </script>
-
+<br>
 
 
 <section class="card">
@@ -237,11 +237,11 @@ new Morris.Bar({
 <?php
 
   $connect = mysqli_connect("localhost", "root", "", "control");
-  $query3 = "SELECT  usuarios.nombre as nombre, usuarios.apellidos as apellido, departamento.nombre as area, asistencia.tipo as tipo, DATE(asistencia.fecha_hora)As fecha, TIME(asistencia.fecha_hora) As hora 
+  $query3 = "SELECT  usuarios.nombre as nombre, usuarios.apellidos as apellido, departamento.nombre as area, asistencia.tipo as tipo, DATE(asistencia.fecha_hora)As fecha, TIME(asistencia.fecha_hora) As hora, asistencia.estado as estado
   FROM asistencia 
   JOIN usuarios ON usuarios.codigo_persona = asistencia.codigo_persona
   JOIN departamento  ON usuarios.iddepartamento = departamento.iddepartamento 
-  WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.hora BETWEEN '11:00:00' AND '12:30:00'" ;
+  WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.hora BETWEEN '08:16:00' AND '09:00:00' GROUP BY departamento.nombre";
       
 
   $result = mysqli_query($connect, $query3);
@@ -249,7 +249,7 @@ new Morris.Bar({
 
   while($row = mysqli_fetch_array($result)) {
 
-    $chart_data .= "{ nombre:'".$row["nombre"]."' ,hora:'".$row["hora"]."'}, "; 
+    $chart_data .= "{ nombre:'".$row["nombre"]."', hora:'".$row["hora"]."' ,fecha:'".$row["fecha"]."'}, "; 
 
   }
   $chart_data = substr($chart_data, 0, -2);
@@ -258,12 +258,13 @@ new Morris.Bar({
 
 ?>
 
+
 new Morris.Bar({
       element: 'divgrafico3',
       data: [<?php echo $chart_data; ?>],
       xkey: 'nombre',
       ykeys: ['hora'],
-      labels: ['hora'],
+      labels:['hora'],
       hideHover: 'auto',
       barColors: ["#F39C12"], 
     });

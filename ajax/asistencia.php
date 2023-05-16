@@ -17,15 +17,23 @@ switch ($_GET["op"]) {
       		$fecha = date("Y-m-d");
 			$hora = date("H:i:s");
 
+			$horaTarde = date('08:16:00');
+
 			$result2=$asistencia->seleccionarcodigo_persona($codigo_persona);
      		$count2 = mysqli_num_rows($result2);
 			   
      		$par = abs($count2%2); 
 
-          if ($par == 0){ 
+          if ($par == 0){
+			
+			if($hora >= $horaTarde){
+				$estado = "Tardanza";
+			}else{
+				$estado = "Normal";
+			}
                               
                 $tipo = "Entrada";
-        		$rspta=$asistencia->registrar_entrada($codigo_persona,$tipo);
+        		$rspta=$asistencia->registrar_entrada($codigo_persona,$tipo, $estado);
     			//$movimiento = 0;
     			echo $rspta ? '<h3><strong>Nombres: </strong> '. $result['nombre'].' '.$result['apellidos'].'</h3><div class="alert alert-success"> Ingreso registrado '.$hora.'</div>' : 'No se pudo registrar el ingreso';
    		  }else{ 

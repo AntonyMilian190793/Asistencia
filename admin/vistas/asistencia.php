@@ -35,6 +35,7 @@ require 'header.php';
       <th>Fecha Hora</th>
       <th>Asistencia</th>
       <th>Fecha</th>
+      <th>Estado</th>
     </thead>
     <tbody>
     </tbody>
@@ -47,6 +48,7 @@ require 'header.php';
       <th>Fecha Hora</th>
       <th>Asistencia</th>
       <th>Fecha</th>
+      <th>Estado</th>
     </tfoot>   
   </table>
 </div>
