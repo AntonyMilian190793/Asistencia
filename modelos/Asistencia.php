@@ -29,11 +29,11 @@ public function registrar_entrada($codigo_persona,$tipo, $estado){
 	return ejecutarConsulta($sql);
 }
 
-public function registrar_salida($codigo_persona,$tipo){
+public function registrar_salida($codigo_persona,$tipo, $estado){
 	date_default_timezone_set('America/Lima');
 	$fecha = date("Y-m-d");
 	$hora = date("H:i:s");
-	$sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha, hora) VALUES ('$codigo_persona', '$tipo', '$fecha', '$hora')";
+	$sql = "INSERT INTO asistencia (codigo_persona,  tipo, fecha, hora, estado) VALUES ('$codigo_persona', '$tipo', '$fecha', '$hora', '$estado')";
     return ejecutarConsulta($sql);
 }
 

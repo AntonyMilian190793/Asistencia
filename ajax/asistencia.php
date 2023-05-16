@@ -18,6 +18,7 @@ switch ($_GET["op"]) {
 			$hora = date("H:i:s");
 
 			$horaTarde = date('08:16:00');
+			$horaSalida = date('15:00:00');
 
 			$result2=$asistencia->seleccionarcodigo_persona($codigo_persona);
      		$count2 = mysqli_num_rows($result2);
@@ -36,9 +37,16 @@ switch ($_GET["op"]) {
         		$rspta=$asistencia->registrar_entrada($codigo_persona,$tipo, $estado);
     			//$movimiento = 0;
     			echo $rspta ? '<h3><strong>Nombres: </strong> '. $result['nombre'].' '.$result['apellidos'].'</h3><div class="alert alert-success"> Ingreso registrado '.$hora.'</div>' : 'No se pudo registrar el ingreso';
-   		  }else{ 
+   		  }else{
+
+			if($hora >= $horaSalida){
+				$estado = "Personal normal";
+			}else{
+				$estado = "Practicante";
+			}
+			 
                 $tipo = "Salida";
-         		$rspta=$asistencia->registrar_salida($codigo_persona,$tipo);
+         		$rspta=$asistencia->registrar_salida($codigo_persona,$tipo, $estado);
      			//$movimiento = 1;
      			echo $rspta ? '<h3><strong>Nombres: </strong> '. $result['nombre'].' '.$result['apellidos'].'</h3><div class="alert alert-danger"> Salida registrada '.$hora.'</div>' : 'No se pudo registrar la salida';             
         } 
