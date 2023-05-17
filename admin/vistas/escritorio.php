@@ -241,7 +241,7 @@ new Morris.Bar({
   FROM asistencia 
   JOIN usuarios ON usuarios.codigo_persona = asistencia.codigo_persona
   JOIN departamento  ON usuarios.iddepartamento = departamento.iddepartamento 
-  WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.hora BETWEEN '08:16:00' AND '09:00:00' GROUP BY departamento.nombre";
+  WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.hora BETWEEN '08:30:00' AND '09:00:00' GROUP BY departamento.nombre";
       
 
   $result = mysqli_query($connect, $query3);
