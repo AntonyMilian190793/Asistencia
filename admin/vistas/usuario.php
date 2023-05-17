@@ -31,6 +31,7 @@ require 'header.php';
       <th>Nombres y Apellidos</th>
       <th>Área</th>
       <th>Email</th>
+      <th>Código de ingreso</th>
       <th>Fecha de registro</th>
       <th>Estado</th>
     </thead>

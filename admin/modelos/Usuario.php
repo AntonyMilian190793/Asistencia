@@ -49,7 +49,7 @@ public function mostrar($idusuario){
 
 //listar registros
 public function listar(){
-	$sql="SELECT usuarios.idusuario as idusuario ,usuarios.nombre as nombre, usuarios.apellidos as apellidos, usuarios.email as email, DATE_FORMAT(usuarios.fechacreado, '%d-%m-%Y') as fecha, usuarios.estado as estado, departamento.nombre as area 
+	$sql="SELECT usuarios.idusuario as idusuario ,usuarios.nombre as nombre, usuarios.apellidos as apellidos, usuarios.email as email, usuarios.codigo_persona as codigo_persona, DATE_FORMAT(usuarios.fechacreado, '%d-%m-%Y') as fecha, usuarios.estado as estado, departamento.nombre as area 
 	FROM usuarios 
 	JOIN departamento ON departamento.iddepartamento = usuarios.iddepartamento
 	ORDER BY nombre ASC";

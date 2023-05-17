@@ -91,8 +91,9 @@ switch ($_GET["op"]) {
 				"1"=>$reg->nombre ." ". $reg->apellidos,
 				"2"=>$reg->area,
 				"3"=>$reg->email,
-				"4"=>$reg->fecha,
-				"5"=>($reg->estado)?'<span class="label bg-green">Activado</span>':'<span class="label bg-red">Desactivado</span>'
+				"4"=>$reg->codigo_persona,
+				"5"=>$reg->fecha,
+				"6"=>($reg->estado)?'<span class="label bg-green">Activado</span>':'<span class="label bg-red">Desactivado</span>'
 				);
 		}
 
