@@ -142,6 +142,7 @@ if (strlen(session_id())<1)
           <i class="fa fa-clock-o" aria-hidden="true"></i> 
           <span>Control de Asistencias</span>
             <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
