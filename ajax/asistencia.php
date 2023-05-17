@@ -17,7 +17,7 @@ switch ($_GET["op"]) {
       		$fecha = date("Y-m-d");
 			$hora = date("H:i:s");
 
-			$horaTarde = date('08:16:00');
+			$horaTarde = date('08:31:00');
 			$horaSalida = date('15:00:00');
 
 			$result2=$asistencia->seleccionarcodigo_persona($codigo_persona);

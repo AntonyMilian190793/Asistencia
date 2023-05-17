@@ -12,7 +12,7 @@ public function __construct(){
 
 //listar registros
 public function listar(){
-	$sql="SELECT a.idasistencia as id,a.codigo_persona,a.tipo,DATE_FORMAT(a.fecha, '%d-%m-%Y') as fecha,u.nombre,u.apellidos,d.nombre as departamento, a.estado as estado, DATE_FORMAT(a.hora, '%h:%m:%s %p') as hora 
+	$sql="SELECT a.idasistencia as id,a.codigo_persona,a.tipo,DATE_FORMAT(a.fecha, '%d-%m-%Y') as fecha,u.nombre,u.apellidos,d.nombre as departamento, a.estado as estado,a.hora  
 	FROM asistencia a 
 	INNER JOIN usuarios u INNER JOIN departamento d ON u.iddepartamento=d.iddepartamento 
 	WHERE a.codigo_persona=u.codigo_persona ORDER BY idasistencia ASC";
@@ -25,7 +25,7 @@ public function listaru($idusuario){
 }
 
 public function listar_asistencia($fecha_inicio,$fecha_fin,$codigo_persona){
-	$sql="SELECT a.idasistencia,a.codigo_persona,a.fecha_hora,a.tipo,DATE_FORMAT(a.fecha, '%d-%m-%Y') as fecha,u.nombre,u.apellidos, d.nombre as area, a.estado as estado, DATE_FORMAT(a.hora, '%h:%m:%s %p') as hora
+	$sql="SELECT a.idasistencia,a.codigo_persona,a.fecha_hora,a.tipo,DATE_FORMAT(a.fecha, '%d-%m-%Y') as fecha,u.nombre,u.apellidos, d.nombre as area, a.estado as estado, a.hora
 FROM asistencia a 
 INNER JOIN usuarios u ON  a.codigo_persona=u.codigo_persona 
 INNER JOIN departamento d ON u.iddepartamento = d.iddepartamento
