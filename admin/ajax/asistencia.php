@@ -118,8 +118,8 @@ switch ($_GET["op"]) {
 		while ($reg=$rspta->fetch_object()) {
 			$data[]=array(
 				"0"=>$reg->nombre ." ". $reg->apellidos,
-				"1"=>$reg->nombre ." ". $reg->apellidos,
-				"2"=>$reg->area,
+				"1"=>$reg->area,
+				"2"=>$reg->codigo_persona,
 				"3"=>$reg->fecha,
 				"4"=>$reg->hora,
 				"5"=>($reg->tipo == "Entrada")?'<span class="label bg-primary">Entrada</span>' : '<span class="label bg-orange">Salida</span>',
