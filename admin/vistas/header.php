@@ -147,7 +147,8 @@ if (strlen(session_id())<1)
           </a>
           <ul class="treeview-menu">
             <li><a href="asistencia.php"><i class="fa fa-circle-o"></i> Asistencia</a></li>
-            <li><a href="rptasistencia.php"><i class="fa fa-calendar"></i></i> Reportes</a></li>
+            <li><a href="rptasistencia.php"><i class="fa fa-calendar"></i></i> Reportes por Usuario</a></li>
+            <li><a href="rptasistenciaxmes.php"><i class="fa fa-calendar"></i></i> Reportes por Mes</a></li>
            
           </ul>
       </li>

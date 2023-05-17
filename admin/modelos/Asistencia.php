@@ -34,6 +34,16 @@ WHERE DATE(a.fecha)>='$fecha_inicio' AND DATE(a.fecha)<='$fecha_fin' AND a.codig
 }
 
 
+public function listar_asistenciaxmes($fecha_inicio,$fecha_fin){
+	$sql="SELECT a.idasistencia,a.codigo_persona,a.fecha_hora,a.tipo,DATE_FORMAT(a.fecha, '%d-%m-%Y') as fecha,u.nombre,u.apellidos, d.nombre as area, a.estado as estado, DATE_FORMAT(a.hora, '%h:%i:%s %p') as hora
+FROM asistencia a 
+INNER JOIN usuarios u ON  a.codigo_persona=u.codigo_persona 
+INNER JOIN departamento d ON u.iddepartamento = d.iddepartamento
+WHERE DATE(a.fecha)>='$fecha_inicio' AND DATE(a.fecha)<='$fecha_fin' ORDER BY hora DESC";
+	return ejecutarConsulta($sql);
+}
+
+
 }
 
  ?>

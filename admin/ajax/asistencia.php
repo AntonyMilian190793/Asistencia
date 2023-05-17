@@ -174,5 +174,35 @@ switch ($_GET["op"]) {
 			}
 			break;
 
+
+			case 'listar_asistenciaxmes':
+				$fecha_inicio=$_REQUEST["fecha_inicio"];
+				$fecha_fin=$_REQUEST["fecha_fin"];
+					$rspta=$asistencia->listar_asistenciaxmes($fecha_inicio,$fecha_fin);
+					//declaramos un array
+					$data=Array();
+			
+			
+					while ($reg=$rspta->fetch_object()) {
+						$data[]=array(
+							"0"=>$reg->nombre ." ". $reg->apellidos,
+							"1"=>$reg->area,
+							"2"=>$reg->codigo_persona,
+							"3"=>$reg->fecha,
+							"4"=>$reg->hora,
+							"5"=>($reg->tipo == "Entrada")?'<span class="label bg-primary">Entrada</span>' : '<span class="label bg-orange">Salida</span>',
+							"6"=>($reg->estado == "Tardanza")?'<span class="label bg-red">Tardanza</span>':'<span class="label bg-blank">Normal</span>'
+							);
+					}
+			
+					$results=array(
+						 "sEcho"=>1,//info para datatables
+						 "iTotalRecords"=>count($data),//enviamos el total de registros al datatable
+						 "iTotalDisplayRecords"=>count($data),//enviamos el total de registros a visualizar
+						 "aaData"=>$data); 
+					echo json_encode($results);
+			
+				break;
+
 }
 ?>
