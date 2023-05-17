@@ -46,23 +46,16 @@ require 'header.php';
   </div>
   <table id="tbllistado_asistencia" class="table table-striped table-bordered table-condensed table-hover">
     <thead>
+      <th>Nombres Y Apellidos</th>
+      <th>Área</th>
+      <th>Código de ingreso</th>
       <th>Fecha</th>
-      <th>Nombres</th>
-      <th>Apellidos</th>
-      <th>Asistencia</th>
-      <th>Fecha/Hora</th>
-      <th>Código</th>
+      <th>Hora</th>
+      <th>Tipo</th>
+      <th>Estado</th>
     </thead>
     <tbody>
-    </tbody>
-    <tfoot>
-      <th>Fecha</th>
-      <th>Nombres</th>
-      <th>Apellidos</th>
-      <th>Asistencia</th>
-      <th>Fecha/Hora</th>
-      <th>Código</th>
-    </tfoot>   
+    </tbody>  
   </table>
 </div>
 

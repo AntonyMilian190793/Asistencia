@@ -28,26 +28,14 @@ require 'header.php';
   <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
     <thead>
       <th>Opciones</th>
-      <th>Nombre</th>
-      <th>Apellidos</th>
-      <th>Login</th>
+      <th>Nombres y Apellidos</th>
+      <th>Área</th>
       <th>Email</th>
-
-      <th>Fecha/Registro</th>
+      <th>Fecha de registro</th>
       <th>Estado</th>
     </thead>
     <tbody>
-    </tbody>
-    <tfoot>
-      <th>Opciones</th>
-      <th>Nombre</th>
-      <th>Apellidos</th>
-      <th>Login</th>
-      <th>Email</th>
-
-      <th>Fecha/Registro</th>
-      <th>Estado</th>
-    </tfoot>   
+    </tbody>   
   </table>
 </div>
 <div class="panel-body" id="formularioregistros">

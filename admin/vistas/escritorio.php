@@ -187,14 +187,14 @@ new Morris.Bar({
 <?php
 
   $connect = mysqli_connect("localhost", "root", "", "control");
-  $query2 = "SELECT usuarios.nombre as nom, COUNT(*) as total, asistencia.fecha_hora as horaEntrada
-FROM usuarios JOIN
-asistencia ON usuarios.codigo_persona = asistencia.codigo_persona
-WHERE
-usuarios.estado = 1
-GROUP BY
-usuarios.nombre
-ORDER BY total DESC";
+  $query2 = "SELECT departamento.nombre as nom, COUNT(*) as total, asistencia.fecha_hora as horaEntrada
+  FROM usuarios 
+  JOIN asistencia ON usuarios.codigo_persona = asistencia.codigo_persona
+  JOIN departamento ON usuarios.iddepartamento = departamento.iddepartamento
+  WHERE usuarios.estado = 1
+  GROUP BY
+  departamento.nombre
+  ORDER BY total DESC";
       
 
   $result = mysqli_query($connect, $query2);

@@ -33,16 +33,10 @@ require 'header.php';
       <th>Opciones</th>
       <th>Nombre</th>
       <th>Descripcion</th>
-      <th>Fecha/registro</th>
+      <th>Fecha de registro</th>
     </thead>
     <tbody> 
-    </tbody>
-    <tfoot>
-       <th>Opciones</th>
-      <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Fecha/registro</th>
-    </tfoot>   
+    </tbody>  
   </table>
 </div>
 <div class="panel-body" style="height: 400px;" id="formularioregistros">

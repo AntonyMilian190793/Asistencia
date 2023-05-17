@@ -117,12 +117,13 @@ switch ($_GET["op"]) {
 
 		while ($reg=$rspta->fetch_object()) {
 			$data[]=array(
-				"0"=>$reg->fecha,
-				"1"=>$reg->nombre,
-				"2"=>$reg->apellidos,
-				"3"=>$reg->tipo,
-				"4"=>$reg->fecha_hora,
-				"5"=>$reg->codigo_persona
+				"0"=>$reg->nombre ." ". $reg->apellidos,
+				"1"=>$reg->nombre ." ". $reg->apellidos,
+				"2"=>$reg->area,
+				"3"=>$reg->fecha,
+				"4"=>$reg->hora,
+				"5"=>($reg->tipo == "Entrada")?'<span class="label bg-primary">Entrada</span>' : '<span class="label bg-orange">Salida</span>',
+				"6"=>($reg->estado == "Tardanza")?'<span class="label bg-red">Tardanza</span>':'<span class="label bg-blank">Normal</span>'
 				);
 		}
 
@@ -166,7 +167,7 @@ switch ($_GET["op"]) {
 			require_once "../modelos/Usuario.php";
 			$usuario=new Usuario();
 
-			$rspta=$usuario->listar();
+			$rspta=$usuario->listar1();
 
 			while ($reg=$rspta->fetch_object()) {
 				echo '<option value=' . $reg->codigo_persona.'>'.$reg->nombre.' '.$reg->apellidos.'</option>';

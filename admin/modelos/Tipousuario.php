@@ -39,6 +39,11 @@ public function mostrar($idtipousuario){
 
 //listar registros
 public function listar(){
+	$sql="SELECT idtipousuario, nombre, descripcion, DATE_FORMAT(fechacreada, '%d-%m-%Y') as fechacreada FROM tipousuario ORDER BY nombre ASC;";
+	return ejecutarConsulta($sql);
+}
+
+public function listar1(){
 	$sql="SELECT * FROM tipousuario";
 	return ejecutarConsulta($sql);
 }

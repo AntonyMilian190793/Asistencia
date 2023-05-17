@@ -39,6 +39,11 @@ public function mostrar($iddepartamento){
 
 //listar registros
 public function listar(){
+	$sql="SELECT  iddepartamento,nombre, descripcion, DATE_FORMAT(fechacreada, '%d-%m-%Y') as fechacreada FROM departamento ORDER BY nombre ASC";
+	return ejecutarConsulta($sql);
+}
+
+public function listar1(){
 	$sql="SELECT * FROM departamento ORDER BY nombre ASC";
 	return ejecutarConsulta($sql);
 }
