@@ -139,16 +139,16 @@ if (strlen(session_id())<1)
 
           <li class="treeview">
           <a href="#">
-          <i class="fa fa-clock-o" aria-hidden="true"></i> 
-          <span>Control de Asistencias</span>
+          <i class="fa fa-book" aria-hidden="true"></i> 
+          <span>Control de Reportes</span>
             <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="asistencia.php"><i class="fa fa-circle-o"></i> Asistencia</a></li>
-            <li><a href="rptasistencia.php"><i class="fa fa-calendar"></i></i> Reportes por Usuario</a></li>
-            <li><a href="rptasistenciaxmes.php"><i class="fa fa-calendar"></i></i> Reportes por Mes</a></li>
+            <li><a href="asistencia.php"><i class="fa fa-calendar"></i>Asistencia total</a></li>
+            <li><a href="rptasistencia.php"><i class="fa fa-calendar-check-o"></i></i> Reportes por Usuario</a></li>
+            <li><a href="rptasistenciaxmes.php"><i class="fa fa-calendar-minus-o"></i></i> Reportes por Mes</a></li>
            
           </ul>
       </li>
