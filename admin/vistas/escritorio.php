@@ -242,7 +242,7 @@ new Morris.Bar({
     FROM asistencia 
     JOIN usuarios ON usuarios.codigo_persona = asistencia.codigo_persona
     JOIN departamento  ON usuarios.iddepartamento = departamento.iddepartamento 
-    WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.fecha BETWEEN '2023-04-01' AND '2023-12-31' GROUP BY usuarios.nombre ORDER BY total DESC ";
+    WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada'AND asistencia.estado='Tardanza' AND asistencia.fecha BETWEEN '2023-05-16' AND '2023-12-31' GROUP BY usuarios.nombre ORDER BY total DESC ";
       
 
   $result = mysqli_query($connect, $query3);
