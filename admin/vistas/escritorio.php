@@ -242,7 +242,7 @@ new Morris.Bar({
     FROM asistencia 
     JOIN usuarios ON usuarios.codigo_persona = asistencia.codigo_persona
     JOIN departamento  ON usuarios.iddepartamento = departamento.iddepartamento 
-    WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' GROUP BY usuarios.nombre ORDER BY total DESC";
+    WHERE usuarios.estado=1 AND asistencia.tipo ='Entrada' and asistencia.fecha BETWEEN '2023-04-01' AND '2023-12-31' GROUP BY usuarios.nombre ORDER BY total";
       
 
   $result = mysqli_query($connect, $query3);
@@ -250,7 +250,7 @@ new Morris.Bar({
 
   while($row = mysqli_fetch_array($result)) {
 
-    $chart_data .= "{ nombre:'".$row["nombre"]."' , total:'".$row["total"]."' , hora:'".$row["hora"]."' ,fecha:'".$row["fecha"]."'}, "; 
+    $chart_data .= "{ nombre:'".$row["nombre"]."', hora:'".$row["hora"]."' ,fecha:'".$row["fecha"]."'}, "; 
 
   }
   $chart_data = substr($chart_data, 0, -2);
@@ -264,8 +264,8 @@ new Morris.Bar({
       element: 'divgrafico3',
       data: [<?php echo $chart_data; ?>],
       xkey: 'nombre',
-      ykeys: ['total'],
-      labels:['total'],
+      ykeys: ['hora'],
+      labels:['hora'],
       hideHover: 'auto',
       barColors: ["#F39C12"], 
     });
