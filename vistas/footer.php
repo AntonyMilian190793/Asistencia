@@ -25,7 +25,6 @@
     <script src="../public/js/bootbox.min.js"></script> 
     <script src="../public/js/bootstrap-select.min.js"></script>
     <script src="../public/js/filestyle.min.js"> </script>
-    <script src="../public/js/filestyle.min.js"> </script>
 
 </body> 
 </html>
